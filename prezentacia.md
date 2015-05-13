@@ -16,6 +16,24 @@ supervisor: __RNDr. Tomáš Kulich, PhD.__
 - Define post-processing mechanism, that will transform output to the required template language.
 
 ---
+
+# Work this term
+
+- February
+  + basics of the Ruby language
+      * [codecademy.com](http://www.codecademy.com)
+- March
+  + advance ruby tricks and techniques
+      * Olsen, R., 2011. _Eloquent Ruby_. Addison-Wesley Professional.
+- April
+  + YAML
+      * Ben-Kiki, Oren, Clark Evans, and Brian Ingerson. _YAML Ain't Markup Language (YAML™) Version 1.1._ yaml.org, Tech. Rep (2005).
+- May
+  + creating gems in Ruby
+      * [guides.rubygems.org/make-your-own-gem/](http://guides.rubygems.org/make-your-own-gem/) 
+  + presentation for Project Seminar 1
+  
+---
 class: image-slide
 
 # Diagram
