@@ -219,6 +219,19 @@ form:
 
 ---
 
+# Builder
+
+---
+
+# Packages
+
+- create new components
+- create new output rules
+- public sharing of packages
+- changing working language or framework doesn't hurt (so much)
+
+---
+
 # Output - _html_
 
 ```yaml
