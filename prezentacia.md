@@ -219,6 +219,68 @@ form:
 
 ---
 
+# Output - _html_
+
+```yaml
+form:
+    input:    { title: 'Name' }
+    email:    { title: 'Email' }
+    password: { title: 'Password' }
+    button:   { title: 'Log in' }
+```
+
+```html
+<form action="" method="post" class="form">
+ <div class="form-group">
+   <label for="name">Name</label>
+   <input type="text" id="name" name="name" class="form-control">
+ </div>
+
+ <div class="form-group">
+   <label for="email">Email</label>
+   <input type="email" id="email" name="email" class="form-control">
+ </div>
+
+ <div class="form-group">
+   <label for="password">Password</label>
+   <input type="password" id="password" class="form-control">
+  </div>
+
+ <button type="submit" class="btn">Log in</button>
+</form>
+```
+
+---
+
+# Output - _haml_
+
+```yaml
+form:
+    input:    { title: 'Name' }
+    email:    { title: 'Email' }
+    password: { title: 'Password' }
+    button:   { title: 'Log in' }
+```
+
+```haml
+%form.form{ action: "", method: "post"}
+  .form-group
+    %label{for: "name"} Name
+    %input#name.form-control{type: "text", name: "name"}
+
+  .form-group
+    %label{for: "email"} Name
+    %input#email.form-control{type: "email", email: "email"}
+
+  .form-group
+    %label{for: "password"} Name
+    %input#password.form-control{type: "password", password: "password"}
+
+  %button.btn{type: "submit"} Log in
+```
+
+---
+
 # Similar project
 
 - [emmet.io](http://emmet.io)
