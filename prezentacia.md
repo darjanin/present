@@ -35,9 +35,47 @@ supervisor: __RNDr. Tomáš Kulich, PhD.__
   + presentation for Project Seminar 1
   
 ---
+
+# Ruby
+
+- object oriented language
+- dynamic typing
+- EVERYTHING is an _object_
+- garbage collection
+- operator overloading
+- support for Unicode
+- RubyGems - package management
+- supports all major platforms
+
+---
+
+# Ruby - _monkey patching_
+
+#### Change any class
+
+```ruby
+class String
+  def caesar
+    self.chars.map { |c| ((c.ord - 'a'.ord + 3) % 26 + 'a'.ord).chr }.join
+  end  
+end 
+```
+
+```ruby
+'abcxyz'.caesar
+# => "defabc"
+```
+
+# Ruby - _class_
+
+```ruby
+
+```
+
+---
 class: image-slide
 
-# Diagram
+# Application
 
 ![Diagram](scheme.svg "Scheme of app")
 
