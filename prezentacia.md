@@ -50,32 +50,13 @@ supervisor: __RNDr. Tomáš Kulich, PhD.__
 
 ---
 
-# Ruby - _monkey patching_
-
-#### Change any class
-
-```ruby
-class String
-  def caesar
-    self.chars.map { |c| ((c.ord - 'a'.ord + 3) % 26 + 'a'.ord).chr }.join
-  end  
-end 
-```
-
-```ruby
-'abcxyz'.caesar
-# => "defabc"
-```
-
----
-
 # Ruby - _class_
 
 ```ruby
 class Item
   attr_accessor :name, :count
   attr_reader :price
-  
+
   def initialize(name, price, count)
     @name = name
     @price = price
@@ -95,6 +76,81 @@ class Item
     self
   end
 end
+```
+
+---
+
+# Ruby - _monkey patching_
+
+#### Change any class
+
+```ruby
+class String
+  def caesar
+    self.chars.map { |c| ((c.ord - 'a'.ord + 3) % 26 + 'a'.ord).chr }.join
+  end  
+end 
+```
+
+```ruby
+'abcxyz'.caesar
+# => "defabc"
+```
+
+---
+
+# Ruby - _metaprogramming_
+
+```ruby
+class A
+  def method_missing(method, *args, &block)
+    "method_missing #{method} with arguments: #{args.join(', ')}"
+  end
+end
+
+obj = A.new
+
+obj.random_method(1, 'abc', true)
+# => "method_missing captured a call to random_method with arguments: 1, abc, true"
+```
+
+```ruby
+class A
+  METHOD_NAMES = ['abc', 'def', 'ghi', 'jkl', 'mno']
+
+  METHOD_NAMES.each do |name|
+    define_method(name) do |arg|
+      "Called method #{name} with argument: #{arg}"
+    end
+  end
+end
+
+obj = A.new
+obj.abc(42)        # => "Called method abc with argument: 42"
+obj.mno('arg')     # => "Called method mno with argument: arg"
+```
+
+---
+
+# RubyGems
+
+- package management
+- easy installation & adding distribution
+
+```shell
+├── Rakefile
+├── bin
+│   └── hola
+├── hola-0.0.0.gem
+├── hola-0.0.1.gem
+├── hola-0.0.2.gem
+├── hola.gemspec
+├── lib
+│   ├── hola
+│   │   └── translator.rb
+│   └── hola.rb
+└── test
+    └── test_hola.rb
 ```
 
 ---
@@ -149,7 +205,7 @@ form:
 
 ---
 
-# vDOM & OUTPUT RULES
+# vDOM & Output rules
 
 - parsed input with applied theme will be converted to object representation
 - applying output rules to this objects
