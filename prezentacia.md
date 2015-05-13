@@ -46,6 +46,7 @@ supervisor: __RNDr. Tomáš Kulich, PhD.__
 - support for Unicode
 - RubyGems - package management
 - supports all major platforms
+- ...
 
 ---
 
@@ -66,10 +67,34 @@ end
 # => "defabc"
 ```
 
+---
+
 # Ruby - _class_
 
 ```ruby
+class Item
+  attr_accessor :name, :count
+  attr_reader :price
+  
+  def initialize(name, price, count)
+    @name = name
+    @price = price
+    @count = count
+  end
 
+  def available?
+    @count > 0 ? true : false
+  end
+
+  def price_drop(percent)
+    Item.new @name, @price * percent / 100, @count
+  end
+
+  def price_drop!(percent)
+    @price *= percent / 100
+    self
+  end
+end
 ```
 
 ---
