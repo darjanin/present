@@ -44,3 +44,29 @@ app theme new theme-name
 app theme publish
 ```
 
+---
+
+# Similar project
+
+- [emmet.io](http://emmet.io)
+- plugin for text editor that speeds up writing HTML & CSS
+
+```html
+nav>ul>(li.nav-item>a{item $1})*3
+```
+
+```html
+<nav>
+    <ul>
+        <li class="nav-item"><a href="">item </a></li>
+        <li class="nav-item"><a href="">item </a></li>
+        <li class="nav-item"><a href="">item </a></li>
+    </ul>
+</nav>
+```
+
+- syntaxProfiles.json [docs.emmet.io/customization/syntax-profiles/](http://docs.emmet.io/customization/syntax-profiles/)
+
+#### Differences
+- emmet is to make writing html faster, but you still need to know CSS styles
+- syntaxProfiles.json is to make small changes like choose between XHTML or HTML
