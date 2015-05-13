@@ -24,3 +24,23 @@ class: image-slide
 
 ---
 
+# CLI
+
+- input & output from application will be using CLI
+- written using `thor`
+- [whatisthor.com](http://whatisthor.com)
+
+```shell
+app --theme bootstrap --output haml
+
+app --theme bootstrap --output haml --file out.haml
+```
+
+- later will be added package manager for themes & output rules
+
+```shell
+app theme new theme-name
+
+app theme publish
+```
+
