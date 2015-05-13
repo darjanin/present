@@ -28,6 +28,7 @@ supervisor: __RNDr. Tomáš Kulich, PhD.__
 - April
   + YAML
       * Ben-Kiki, Oren, Clark Evans, and Brian Ingerson. _YAML Ain't Markup Language (YAML™) Version 1.1._ yaml.org, Tech. Rep (2005).
+  + Bootstrap, erb, [haml.info](http://haml.info)
 - May
   + creating gems in Ruby
       * [guides.rubygems.org/make-your-own-gem/](http://guides.rubygems.org/make-your-own-gem/) 
