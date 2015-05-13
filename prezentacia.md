@@ -2,8 +2,9 @@ class: center, middle
 
 # Automation of creating templates of a web application
 
-author: Milan Darjanin
-supervisor: RNDr. Tomáš Kulich, PhD.
+author: __Milan Darjanin__
+
+supervisor: __RNDr. Tomáš Kulich, PhD.__
 
 ---
 
@@ -15,7 +16,11 @@ supervisor: RNDr. Tomáš Kulich, PhD.
 - Define post-processing mechanism, that will transform output to the required template language.
 
 ---
+class: image-slide
 
 # Diagram
 
+![Diagram](scheme.svg "Scheme of app")
+
+---
 
