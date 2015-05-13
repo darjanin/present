@@ -46,6 +46,41 @@ app theme publish
 
 ---
 
+# Parser
+
+- convert input to vDOM using package specified on the input
+- if specified variables in input syntax set right values
+
+```yaml
+form:
+    input:    { title: 'Name' }
+    email:    { title: 'Email' }
+    password: { title: 'Password' }
+    button:   { title: 'Log in' }
+```
+
+#### Problems
+
+- some tags have children like `form` tag
+- different tags can not have children like `input`
+- default values for attributes `title`, `name`, etc.
+
+---
+
+# vDOM & OUTPUT RULES
+
+- parsed input with applied theme will be converted to object representation
+- applying output rules to this objects
+- try to implement own version
+- inspiration from [github.com/plexus/hexp](https://github.com/plexus/hexp)
+
+
+- output rules will define output syntax
+- goal of thesis is to write few to show they usage
+- build package manager for them to easier sharing
+
+---
+
 # Similar project
 
 - [emmet.io](http://emmet.io)
