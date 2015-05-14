@@ -17,7 +17,7 @@ supervisor: __RNDr. Tomáš Kulich, PhD.__
 
 ---
 
-# Work this term
+# Work done this term
 
 - February
   + basics of the Ruby language
@@ -221,6 +221,14 @@ form:
 
 # Builder
 
+- transforms vDOM using output rules package
+- writes output to CLI or file
+- before applying rules check if they are valid
+
+
+- default output will be plain HTML5
+- different outputs will be defined in output rules packages
+
 ---
 
 # Packages
@@ -318,3 +326,9 @@ nav>ul>(li.nav-item>a{item $1})*3
 #### Differences
 - emmet is to make writing html faster, but you still need to know CSS styles
 - syntaxProfiles.json is to make small changes like choose between XHTML or HTML
+
+
+---
+class: middle, center
+
+# Thank you for&nbsp;your&nbsp;attention.
