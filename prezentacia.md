@@ -39,9 +39,9 @@ supervisor: __RNDr. Tomáš Kulich, PhD.__
 # Ruby
 
 - object oriented language
-- dynamic typing
 - EVERYTHING is an _object_
-- garbage collection
+- dynamic typing
+- garbage collector
 - operator overloading
 - support for Unicode
 - RubyGems - package management
@@ -135,7 +135,7 @@ obj.mno('arg')     # => "Called method mno with argument: arg"
 # RubyGems
 
 - package management
-- easy installation & adding distribution
+- easy installation & distribution of gems
 
 ```shell
 ├── Rakefile
@@ -174,7 +174,7 @@ app --theme bootstrap --output haml
 app --theme bootstrap --output haml --file out.haml
 ```
 
-- later will be added package manager for themes & output rules
+- will be added package manager for themes & output rules
 
 ```shell
 app theme new theme-name
@@ -209,7 +209,6 @@ form:
 
 - parsed input with applied theme will be converted to object representation
 - applying output rules to this objects
-- try to implement own version
 - inspiration from [github.com/plexus/hexp](https://github.com/plexus/hexp)
 
 
